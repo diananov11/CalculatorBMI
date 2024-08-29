@@ -11,16 +11,16 @@
   <div class="container">
     <h1>Check your BMI</h1>
     <p>Enter your weight and height below to check your BMI results</p>
-    <form>
+    <form id="form">
       <div>
-        <label for="weight">Put your weight in here (KG)</label>
-        <input type="text" id="weight">
+        <label for="weight">Put your weight in here (KG)</label> </br>
+        <input type="number" id="weight" autocomplete="false" required>
       </div>
       <div>
-        <label for="height">And your height in here (CM)</label>
-        <input type="text" id="height">
+        <label for="height">And your height in here (CM)</label> </br>
+        <input type="number" id="height" autocomplete="false" required>
       </div>
-      <input type="button" id="button" value="Calculate BMI">
+      <input type="submit" id="button" value="Calculate BMI">
     </form>
     <p id="result"></p>
   </div>

@@ -25,8 +25,8 @@ const calculateBMI = (event) => {
   let name = prompt("what's your name?");
 
   //add description
-  p.innerHTML = `Hello ${name}👋. Your BMI is ${result} which means You are ${description}`;
+  p.innerHTML = `Hello ${name}👋. Your BMI is <strong>${result}</strong> which means You are <strong>${description}</strong>`;
 };
 
-let button = document.getElementById("button");
-button.addEventListener("click", calculateBMI);
+let form = document.getElementById("form");
+form.addEventListener("submit", calculateBMI);
