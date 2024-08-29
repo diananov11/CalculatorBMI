@@ -16,12 +16,16 @@ const calculateBMI = (event) => {
   } else if (result >= 25) {
     description = "Overweight";
   } else if (result >= 18.5) {
-    description = "Normal weight";
+    description = "Normal";
   } else {
     description = "underweight";
   }
 
-  p.innerHTML = `Your BMI is ${result} which means You are ${description}`;
+  //ask name
+  let name = prompt("what's your name?");
+
+  //add description
+  p.innerHTML = `Hello ${name}👋. Your BMI is ${result} which means You are ${description}`;
 };
 
 let button = document.getElementById("button");
