@@ -3,22 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculator BMI</title>
+  <title>Calculator BMI 💡</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ebaaa9c4bc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div class="container">
-    <h1>Check your BMI</h1>
+    <h1>Check your BMI <i class="fa-solid fa-calculator" style="color: #6683C6;"></i>
+    </h1>
     <p>Enter your weight and height below to check your BMI results</p>
     <form id="form">
       <div>
         <label for="weight">Put your weight in here (KG)</label> </br>
-        <input type="number" id="weight" autocomplete="false" required>
+        <input type="number" id="weight" autocomplete="off" autofocus required>
       </div>
       <div>
         <label for="height">And your height in here (CM)</label> </br>
-        <input type="number" id="height" autocomplete="false" required>
+        <input type="number" id="height" autocomplete="off" autofocus required>
       </div>
       <input type="submit" id="button" value="Calculate BMI">
     </form>
