@@ -1,3 +1,6 @@
+//ask name
+let name = prompt("what's your name?");
+
 const calculateBMI = (event) => {
   event.preventDefault();
   // add dom
@@ -21,11 +24,8 @@ const calculateBMI = (event) => {
     description = "underweight";
   }
 
-  //ask name
-  let name = prompt("what's your name?");
-
   //add description
-  p.innerHTML = `Hello ${name}👋. Your BMI is <strong>${result}</strong> which means You are <strong>${description}</strong>`;
+  p.innerHTML = `Hello ${name}👋. Your BMI is <strong>${result}</strong> which means you are <strong>${description}</strong>`;
 };
 
 let form = document.getElementById("form");

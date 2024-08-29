@@ -14,17 +14,19 @@
 
 <body>
   <div class="container">
-    <h1>Check your BMI <i class="fa-solid fa-calculator" style="color: #6683C6;"></i>
-    </h1>
-    <p>Enter your weight and height below to check your BMI results</p>
+    <div class="header">
+      <h1>Check your BMI <i class="fa-solid fa-calculator" style="color: #6683C6;"></i>
+      </h1>
+      <p>Enter your weight and height below to check your BMI results</p>
+    </div>
     <form id="form">
-      <div>
+      <div class="input">
         <label for="weight">Put your weight in here (KG)</label> </br>
-        <input type="number" id="weight" autocomplete="off" autofocus required>
+        <input type="number" id="weight" placeholder="60" autocomplete="off" autofocus required>
       </div>
-      <div>
+      <div class="input">
         <label for="height">And your height in here (CM)</label> </br>
-        <input type="number" id="height" autocomplete="off" autofocus required>
+        <input type="number" id="height" placeholder="167" autocomplete="off" autofocus required>
       </div>
       <input type="submit" id="button" value="Calculate BMI">
     </form>
